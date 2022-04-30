@@ -1,10 +1,10 @@
-# Portfolio V1
+# Portfolio V1.1
 
 Este es mi portafolio persona hecho en next js y tailwind.
 
 # Contenido
 
-- [Portfolio V1](#portfolio-v1)
+- [Portfolio V1.1](#portfolio-v11)
 - [Contenido](#contenido)
 - [Tecnologia usadas](#tecnologia-usadas)
 - [Lunch](#lunch)
@@ -21,7 +21,16 @@ Este es mi portafolio persona hecho en next js y tailwind.
 
 # Lunch
 
-Para correr este proyecto, se tiene que usar los siguiente comandos:
+Para correr este proyecto antes se tiene que crear las siguientes variables de entorno:
+
+```
+NEXT_PUBLIC_API_URL=URL_API_PORTFOLIO_BACKEND
+NEXT_PUBLIC_CAPTCHA_KEY=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI //Solo para testing
+```
+
+_[Portfolio_backend](https://github.com/castrocarlos313/portfolio_backend)_
+
+Y se tiene que usar los siguiente comandos:
 
 ```
 $ npm install
@@ -31,13 +40,13 @@ $ npm run dev
 # Imagenes
 
 [index.jsx](pages/index.js)
-![ícono](https://i.imgur.com/fuVAYtA.png)
+![ícono](https://i.imgur.com/l5IyNQe.png)
 
 [contacto.jsx](pages/contacto.js)
-![ícono](https://i.imgur.com/itEguFQ.png)
+![ícono](https://i.imgur.com/qE2O4m0.png)
 
 # To do
 
 - Crear webservice para agregar proyecto hechos
-- Crear webservice para contacto
+- Crear webservice para contacto(HECHO)
 - Multiples idiomas

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import styles from "../../styles/Layout.module.css";
+import LinkRedes from "../LinkRedes";
 
 const Header = () => {
   const { pathname } = useRouter();
@@ -41,10 +42,18 @@ const Header = () => {
           </a>
         </Link>
       </nav>
-
-      <p className=" text-3xl text-white uppercase text-center p-2 hidden sm:block">
-        Portfolio
-      </p>
+      <div className="hidden gap-3 my-auto sm:flex">
+        <LinkRedes
+          href={"https://www.linkedin.com/in/carlos-castro-21b04a192/"}
+          img="/static/iconos/linkedin.png"
+          name="LinkedIn"
+        />
+        <LinkRedes
+          href={"https://github.com/castrocarlos313"}
+          img="/static/iconos/github.png"
+          name="GitHub"
+        />
+      </div>
     </div>
   );
 };
