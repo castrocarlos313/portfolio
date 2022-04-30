@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import BioSection from "../components/BioSection";
 import Conocimiento from "../components/Conocimiento";
 import MainHeader from "../components/MainHeader";
@@ -9,17 +10,19 @@ export default function Home() {
   return (
     <div className="w-full">
       <MainHeader />
-      <main className="max-w-6xl min-w-[400px] w-3/5 mx-auto mb-10 bg-white bg-opacity-40 backdrop-blur-md p-3 rounded-b">
+      <main className="max-w-6xl min-w-[400px] w-3/5 mx-auto mb-10 bg-white bg-opacity-50 backdrop-blur-lg p-3 rounded-b">
         <div className="flex p-8 flex-col-reverse gap-4 lg:flex-row ">
           <div className="basis-3/5 m-auto text-center lg:text-left">
             <h1 className="text-6xl font-bold mb-10">Carlos Castro</h1>
-            <a
-              className="p-5 bg-red-700 text-white rounded uppercase font-bold cursor-pointer hover:bg-cyan-100 transition-colors"
-              download
-              href="CV - Carlos Castro.pdf"
-            >
-              Descargar CV
-            </a>
+            <Link download href="CV - Carlos Castro.pdf">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="p-5 bg-red-700 text-white rounded uppercase font-bold cursor-pointer hover:bg-red-500 transition-colors"
+              >
+                Descargar CV
+              </a>
+            </Link>
           </div>
           <img
             src="/static/perfil.jpeg"
